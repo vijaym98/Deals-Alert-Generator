@@ -15,6 +15,7 @@ tv.save_to_mongo()
 
 all_items  = Item.all()
 
+
 print(all_items)
 print(all_items[0])
 print(speakers.price_of_item())
