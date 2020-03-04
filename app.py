@@ -9,5 +9,13 @@ print('Speakers: ' + str(speakers.price_of_item()))
 print('Ipad: ' + str(ipad.price_of_item()))
 print('TV: ' + str(tv.price_of_item()))
 
+ipad.save_to_mongo()
+speakers.save_to_mongo()
+tv.save_to_mongo()
 
+all_items  = Item.all()
+
+print(all_items)
+print(all_items[0])
+print(speakers.price_of_item())
 
